@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class 2-DArray : MonoBehaviour {
+public class UnitArrayPortion : MonoBehaviour
+{
+    private GameObject[][] unitBoard;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
