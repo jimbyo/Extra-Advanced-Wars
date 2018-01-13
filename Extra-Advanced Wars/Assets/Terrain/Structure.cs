@@ -9,6 +9,8 @@ public class Structure : MonoBehaviour {
 
     public void capturing(int health) //to be called by capturing infantry
     { capturePoints -= health; }
+    public int getCapturePoints()
+    { return capturePoints; }
     public int getIncome()
     { return income; }
     public int getTeam()
