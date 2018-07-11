@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4483132002815536}
   - component: {fileID: 212430589508086034}
-  - component: {fileID: 114062099829706392}
   m_Layer: 0
   m_Name: HQ
   m_TagString: Untagged
@@ -35,30 +34,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1362053760640174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 54.093777, y: 2.6354423, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114062099829706392
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1362053760640174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cca27210e15731f4d970a217c85d3cd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tname: HQ
-  capturable: 1
-  critical: 1
-  side: 0
-  income: 1000
-  defense: 5
-  encumberance: 01000000010000000100000001000000
 --- !u!212 &212430589508086034
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -98,7 +79,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 11.52, y: 6.48}
+  m_Size: {x: 3.12, y: 2.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
