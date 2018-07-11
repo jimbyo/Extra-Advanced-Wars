@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TerrainScript : MonoBehaviour {
-    public float defenseMultiplier;
-    public int moveCost;
-    public bool passable;
-    //Assign those three variables in the prefabs
-    //All terrain-related prefabs need this. Road/Plain/etc will use only this script for terrain-related things, structures will also need
-    //a building script, production will also need the appropriate production script
+public class TerrainScript : MonoBehaviour
+{
+    public bool capturable = false; //false by default. if true, this terrain will have side and income values
+    public bool critical = false;//false by default. true only for hq
+    public int side = 0; //0 for neutral (default), then whatever. relevant only for capturable
+    public int income = 0;//0 by default, only change on capturable terrain
+    //construction related code in a separate script, this script should only hold values for terrain
+    public int defense; //must enter for each terrain, no default
+    public int[] encumberance; //4 move types: infantry, wheels, treads, air. no default, must enter the 4 values in order for each terrain
 
-    //Terrain is passable if passable is true AND no enemy unit is on the tile. Terrain cannot be landed on if any unit is on it.
-    //Checking if a unit is on a tile will have to be done on the board (2d array) itself
-    public float getDefense() { return defenseMultiplier; }
-    public int getMoveCost() { return moveCost; }
-    public bool getPassable() { return passable; }
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
