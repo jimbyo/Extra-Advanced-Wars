@@ -30,10 +30,11 @@ public class Unit : MonoBehaviour {
     { return isInf; }
 
     //This part should relate to capturing structures and should only be called by the board after checking infantry()
-    public void capture(Structure s)
+    //Update 7/11/2018: actually starting stuff again, come back to this script to readapt to what we've planned later
+    /*public void capture(Structure s)
     {
         s.capturing(health);
         if (s.getCapturePoints() <= 0)
             s.capture(team);
-    }
+    }*/
 }
