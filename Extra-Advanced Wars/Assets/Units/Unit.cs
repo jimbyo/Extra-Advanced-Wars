@@ -31,6 +31,12 @@ public class Unit : MonoBehaviour {
 
     //This part should relate to capturing structures and should only be called by the board after checking infantry()
     //Update 7/11/2018: actually starting stuff again, come back to this script to readapt to what we've planned later
+    //Forgotten how we decided units would work in that resuming discussion (in relation to terrain, at least). Probably involved x and y
+    //to get current terrain's info in case of combat. How will that work with movement? Since terrain will be uniform, checking move cost
+    //will probably just involve checking the space +x or -y away (as examples)
+    //Health is simple enough. Being faithful to Advance Wars style stuff will mean that some units will need two weapons (vs infantry
+    //will be different from vs vehicle in consideration of things like the mech unit and tanks)
+    //isInf will probably need to be a flag
     /*public void capture(Structure s)
     {
         s.capturing(health);
